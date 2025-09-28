@@ -21,6 +21,10 @@ function App() {
     }
   };
 
+  const resetCount = () => {
+    setCount(0); 
+  };
+
   // 5. The Component's UI (JSX)
   return (
     <div className="card">
@@ -39,6 +43,10 @@ function App() {
         
         <button onClick={incrementCount}>
           Increment (+)
+        </button>
+
+         <button onClick={resetCount}>
+          Reset to Zero
         </button>
       </div>
 
